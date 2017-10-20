@@ -5,26 +5,26 @@ CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = Programa4.o $(RES)
-LINKOBJ  = Programa4.o $(RES)
+OBJ  = Programa5.o $(RES)
+LINKOBJ  = Programa5.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
-BIN  = Programa4.exe
+BIN  = Programa5.exe
 CXXFLAGS = $(CXXINCS)  
 CFLAGS = $(INCS)  
 RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
-all: all-before Programa4.exe all-after
+all: all-before Programa5.exe all-after
 
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
-	$(CC) $(LINKOBJ) -o "Programa4.exe" $(LIBS)
+	$(CC) $(LINKOBJ) -o "Programa5.exe" $(LIBS)
 
-Programa4.o: Programa4.c
-	$(CC) -c Programa4.c -o Programa4.o $(CFLAGS)
+Programa5.o: Programa5.c
+	$(CC) -c Programa5.c -o Programa5.o $(CFLAGS)

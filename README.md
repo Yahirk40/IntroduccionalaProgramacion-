@@ -1,2 +1,2 @@
 # IntroduccionalaProgramacion-
-Introduccion a la Programacion UPIITA 
+Introducción a la Programación UPIITA 
